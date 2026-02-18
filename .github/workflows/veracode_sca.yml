@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a sca scan
-        run: curl -sSL https://sca-downloads.veracode.com/ci.sh | sh -s -- scan --url https://github.com/Microsoft/vscode-java-pack --recursive --no-upload
+        run: curl -sSL https://sca-downloads.veracode.com/ci.sh | sh -s -- scan --url https://github.com/Microsoft/vscode-node-debug2 --recursive --no-upload
         env:
           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
