@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a sca scan
-        run: curl -sSL https://sca-downloads.veracode.com/ci.sh | sh -s -- scan --url https://github.com/graphql/graphiql --recursive --no-upload
+        run: curl -sSL https://sca-downloads.veracode.com/ci.sh | sh -s -- scan --url https://github.com/microsoft/vscode-gradle --recursive --no-upload
         env:
           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
